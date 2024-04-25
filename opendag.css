@@ -1,0 +1,167 @@
+*
+{   
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background: #006445;
+    font-family: "Barlow", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+   #sitemap {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 160px;
+    width: 100%;
+    top: 950px;
+    left: 0px;
+    box-shadow: black 0px 0px 9px;
+    background-color: #006445;
+    font-size: 20px;
+    text-align: left;
+    color: #dbff4a;
+    font-weight: bold;
+    line-height: 0.5;
+}
+
+#sitemap li {
+    color: #dbff4a;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+#navbar ul {
+    list-style: none;
+    text-align: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar li a {
+position: relative;
+    font-size: 22px;
+    color: #dbff4a;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+
+
+}
+
+#navbar li a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #dbff4a;
+    transition: .3s;
+}
+
+#navbar li a:hover::before {
+    width: 100%;
+}
+
+
+#navbar li {
+    display: inline;
+    font-weight: bold;
+}
+
+.img1 {
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    height: 20px;
+    width: 20px;
+    box-shadow: 0px 0px 7px;
+}
+
+.container {
+width: 100vw;
+height: 100vh;
+background-image: url(mooiescool.jpg);
+background-position: center;
+background-size: cover;
+padding: 0 8%;
+}
+
+
+
+.content{
+    top: 45%;
+    position: absolute; 
+    right: 540px;
+    transform:translateY(-50%);
+    color: #fff;
+}
+
+.content h1{
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.content h1 span{
+    color: #4eff37;
+}
+
+
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color:#fff ;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.content button img{
+    width: 10px;
+    margin: 10px;
+}
+
+.launch-time{
+    display: flex;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+    
+}
+
+.launch-time div p{
+    font-size: 80px;   
+}
+.countdown .timer {
+    display: flex;
+}
+
+.countdown .timer > div {
+    width: 60px; 
+    margin-right: 70px; 
+    margin-bottom: -10px;
+}
+
+.countdown .timer p {
+    display: inline-block;
+    margin: 0;
+    font-size: 90px; 
+}
