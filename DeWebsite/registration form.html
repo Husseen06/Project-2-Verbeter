@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="registration for.css" />
+</head>
+
+<body>
+    <section class="container">
+        <header>Registratie formulier</header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>volledige naam</label>
+                <input type="text" placeholder="voer je volledige naam in" required />
+            </div>
+
+            <div class="input-box">
+                <label>Email Adres</label>
+                <input type="text" placeholder="voer je email adres in" required />
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>telefoon nummer</label>
+                    <input type="nummer" placeholder="voer je telefoon nummer in" required />
+                </div>
+                <div class="input-box">
+                    <label>geboortedatum</label>
+                    <input type="date" placeholder="voer je geboortedatum in" required />
+                </div>
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="geslacht">
+                        <input type="radio" id="check-male" name="gender" checked />
+                        <label for="check-male">man</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" />
+                        <label for="check-female">vrouw</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" />
+                        <label for="check-other">zeg ik liever niet</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box address">
+                <label for="opties">Selecteer een opleiding:</label>
+                <select id="opties" name="optie">
+                    <option value="optie1">Software developer BOL</option>
+                    <option value="optie2">Expert IT systems and devices</option>
+                    <option value="optie3">Mederwerker ICT</option>
+                    <option value="optie4">Medewerker ICT structuurklas</option>
+                    <option value="optie5">Software developer BBL</option>
+                <label>Adres</label>
+                <input type="text" placeholder="voer je straat naam in" required />
+                <div class="column">
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Land</option>
+                            <option>Frankrijk</option>
+                            <option>Japan</option>
+                            <option>India</option>
+                            <option>Nederland</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="voer je stad in" required />
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="voer je regio in" required />
+                    <input type="number" placeholder="voer je postcode in" required />
+                </div>
+            </div>
+            <button>verzend</button>
+        </form>
+    </section>
+    <ul id="navbar">
+        <li id="nav"><a href="Homepagina.html">HOME </a></li>
+        <li id="nav"><a href="Quiz.html">QUIZ </a></li>
+        <li id="nav"><a href="chatbot.html">CHATBOT </a></li>
+        <li id="nav"><a href="talentree.html">TALENT TREE</a></li>
+        <li id="nav"><a href="registration form.html">REGRISTRATIE</a></li>
+        <li id="nav"><a href="opendag.html">OPEN DAG</a></li>
+        <li id="nav"><a href="over ons.html">OVER ONS </a></li>
+   </ul>
+</body>
+
+
+</html>

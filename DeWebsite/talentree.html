@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>talentree</title>
+    <link rel="stylesheet" href="talentree.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<script>
+    var beantwoordeVragen = []; // Array om beantwoorde vragen bij te houden
+
+    // Functie om de volgende vraag te stellen
+    function stelVolgendeVraag(vraagNummer) {
+        // Verberg de vorige vraag
+        document.getElementById('vraag' + vraagNummer).style.display = 'none';
+
+        // Voeg het antwoord toe aan de array
+        var antwoord = document.querySelector('input[name=antwoord' + vraagNummer + ']:checked');
+        if (antwoord) {
+            beantwoordeVragen.push({
+                vraag: document.querySelector('label[for=antwoord' + vraagNummer + ']').textContent.trim(),
+                antwoord: antwoord.value
+            });
+        }
+
+        // Toon beantwoorde vragen en volgende vraag, als er nog vragen zijn
+        toonBeantwoordeVragen();
+        if (vraagNummer < 5) {
+            vraagNummer++;
+            document.getElementById('vraag' + vraagNummer).style.display = 'block';
+        } else {
+            // Toon bedanktbericht als alle vragen zijn beantwoord
+            document.getElementById('bedankt').style.display = 'block';
+        }
+    }
+
+    // Functie om beantwoorde vragen te tonen
+    function toonBeantwoordeVragen() {
+        var beantwoordeVragenDiv = document.getElementById('beantwoordeVragen');
+        beantwoordeVragenDiv.innerHTML = ''; // Wis de vorige inhoud
+
+        if (beantwoordeVragen.length > 0) {
+            beantwoordeVragenDiv.innerHTML = '<h2>Beantwoorde vragen:</h2>';
+
+            beantwoordeVragen.forEach(function (vraag) {
+                var p = document.createElement('p');
+                p.textContent = vraag.vraag + ' - ' + vraag.antwoord;
+                beantwoordeVragenDiv.appendChild(p);
+            });
+        }
+    }
+</script>
+
+<form>
+    <!-- Vraag 1 -->
+    <div id="vraag1">
+        <label for="antwoord1">Heeft u ervaring met het gebruik van computers? </label>
+        <br>
+        <input type="radio" name="antwoord1" id="antwoord1ja" value="ja" required> Ja
+        <input type="radio" name="antwoord1" id="antwoord1nee" value="nee" required> Nee
+        <br>
+        <button type="button" onclick="stelVolgendeVraag(1)">Volgende</button>
+    </div>
+
+    <!-- Vraag 2 -->
+    <div id="vraag2" style="display: none;">
+        <label for="antwoord2">Gebruikt u regelmatig sociale media? </label>
+        <br>
+        <input type="radio" name="antwoord2" id="antwoord2ja" value="ja" required> Ja
+        <input type="radio" name="antwoord2" id="antwoord2nee" value="nee" required> Nee
+        <br>
+        <button type="button" onclick="stelVolgendeVraag(2)">Volgende</button>
+    </div>
+
+    <!-- Vraag 3 -->
+    <div id="vraag3" style="display: none;">
+        <label for="antwoord3">Bent u bekend met het gebruik van spreadsheets? </label>
+        <br>
+        <input type="radio" name="antwoord3" id="antwoord3ja" value="ja" required> Ja
+        <input type="radio" name="antwoord3" id="antwoord3nee" value="nee" required> Nee
+        <br>
+        <button type="button" onclick="stelVolgendeVraag(3)">Volgende</button>
+    </div>
+
+    <!-- Vraag 4 -->
+    <div id="vraag4" style="display: none;">
+        <label for="antwoord4">Heeft u ervaring met programmeren? </label>
+        <br>
+        <input type="radio" name="antwoord4" id="antwoord4ja" value="ja" required> Ja
+        <input type="radio" name="antwoord4" id="antwoord4nee" value="nee" required> Nee
+        <br>
+        <button type="button" onclick="stelVolgendeVraag(4)">Volgende</button>
+    </div>
+
+    <!-- Vraag 5 -->
+    <div id="vraag5" style="display: none;">
+        <label for="antwoord5">Vindt u het leuk om nieuwe software uit te proberen? </label>
+        <br>
+        <input type="radio" name="antwoord5" id="antwoord5ja" value="ja" required> Ja
+        <input type="radio" name="antwoord5" id="antwoord5nee" value="nee" required> Nee
+        <br>
+        <button type="button" onclick="stelVolgendeVraag(5)">Volgende</button>
+    </div>
+
+    <!-- Beantwoorde vragen -->
+    <div id="beantwoordeVragen"></div>
+
+    <!-- Bedanktbericht -->
+    <div id="bedankt" style="display: none;">
+        <p>Bedankt voor het invullen van het formulier</p>
+    </div>
+</form>
+
+<ul id="navbar">
+     <li id="nav"><a href="Homepagina.html">HOME </a></li>
+     <li id="nav"><a href="Quiz.html">QUIZ </a></li>
+     <li id="nav"><a href="chatbot.html">CHATBOT </a></li>
+     <li id="nav"><a href="talentree.html">TALENT TREE</a></li>
+     <li id="nav"><a href="registration form.html">REGRISTRATIE</a></li>
+     <li id="nav"><a href="opendag.html">OPEN DAG</a></li>
+     <li id="nav"><a href="over ons.html">OVER ONS </a></li>
+</ul>
+
+
+
+     
+
+</body>
+</html>

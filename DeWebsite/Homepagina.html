@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="homepagina.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="popup">
+    <button id="sluiten">&times;</button>
+    <h11>Welkom</h11>
+    <p> Hallo, Dit is het project van Shaakir, Jayden en Husseen.
+    </p>
+
+</div>
+    
+    <h3 id="demo"></h3>
+
+    <script>
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 12) {
+            greeting = "Goedemorgen";
+        } else if (time < 18) {
+            greeting = "Goedemiddag";
+        } else {
+            greeting = "Goedeavond";
+        }
+        document.getElementById("demo").innerHTML = greeting;
+    </script>
+    <script>
+        window.addEventListener("load",function(){
+setTimeout(
+    function open (event){
+document.querySelector(".popup").style.display ="block";
+    }, 
+    1000 // 1000ms dus 1sec
+)
+
+        });
+        document.querySelector("#sluiten").addEventListener("click",function(){
+            document.querySelector(".popup").style.display = "none";
+
+        });
+    </script>
+
+    <a href="Quiz.html"> <img src="mooie quiz.jpg" class="img2"></a>
+    <a href="chatbot.html"> <img src="chatbothaha.jpg" class="img3"></a>
+    <a href="talentree.html"><img src="ACV_SkillTreeFull.webp" class="img4"></a>
+
+      <ul id="navbar">
+       <img src="tcrlogo.png" class="img1">
+        <li id="nav"><a href="Homepagina.html">HOME </a></li>
+        <li id="nav"><a href="Quiz.html">QUIZ </a></li>
+        <li id="nav"><a href="chatbot.html">CHATBOT </a></li>
+        <li id="nav"><a href="talentree.html">TALENT TREE</a></li>
+        <li id="nav"><a href="registration form.html">REGRISTRATIE</a></li>
+        <li id="nav"><a href="opendag.html">OPEN DAG</a></li>
+        <li id="nav"><a href="over ons.html">OVER ONS </a></li>
+</ul>
+ <h1>QUIZ</h1>
+        <h5>CHATBOT</h5>
+        <h4>TALENT TREE</h4>
+
+
+        <ul>
+            <div id="sitemap">
+                <a href="Homepagina.html">
+                    <li>HOME</li> <br>
+                </a>
+                <a href="Quiz.html">
+                    <li>QUIZ</li><br>
+                </a>
+                <a href="chatbot.html">
+                    <li>CHATBOT</li> <br>
+                </a>
+                <a href="talentree.html">
+                    <li>TALENT TREE</li><br>
+                </a>
+                <a href="registration form.html">
+                    <li>REGRISTRATIE</li><br>
+                </a>
+                <a href="opendag.html">
+                    <li>OPEN DAG</li> <br>
+                </a>
+                <a href="over ons.html">
+                    <li>OVER ONS</li><br>
+                </a>
+                <a href="https://www.instagram.com/techniekcollegerotterdam?igsh=MTlzb3FsbTBmN2xydg==">
+                    <li>INSTAGRAM</li>
+                </a>
+                
+            </div>
+
+        </ul>
+
+
+        <h2>Welkom bij ons project</h2>
+</body>

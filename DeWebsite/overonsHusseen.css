@@ -1,0 +1,135 @@
+*{
+  font-family: "Barlow",sans-serif;
+  
+}
+body{
+  background-image: url(mooiescool.jpg);
+  background-size: 100%;
+}
+
+h1{
+    font-size: 3.5em;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 180px;
+    left: 30px;
+    text-decoration: underline;
+}
+.tekst{
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 300px;
+    left: 30px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 325px;
+}
+
+li a {
+ position: relative;
+ font-size: 22px;
+ color: #dbff4a;
+ font-weight: bold;
+ text-decoration: none;
+ margin-left: 10px;
+ background: transparent;
+ 
+ 
+ 
+}
+li a::before {
+  content:"";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #dbff4a;
+  transition: .3s;
+}
+li a:hover::before{
+  width: 100%;
+}
+
+
+li{
+  display: inline;
+  
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  *{
+    font-family: "Barlow",sans-serif;
+    
+  }
+  body{
+    background-image: url(mooiescool.jpg);
+    background-size: 100%;
+  }
+
+
+h1{
+    font-size: 3.5em;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 180px;
+    left: 30px;
+    text-decoration: underline;
+}
+.tekst{
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 300px;
+    left: 30px;
+}
+a{
+    color: rgb(0, 179, 255);
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: -40px;
+}
+
+li a {
+ position: relative;
+ font-size: 22px;
+ color: #dbff4a;
+ font-weight: bold;
+ text-decoration: none;
+ margin-left: 10px;
+ background: transparent;
+
+ 
+ 
+ 
+}
+li a::before {
+  content:"";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #dbff4a;
+  transition: .3s;
+}
+li a:hover::before{
+  width: 100%;
+}
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="opendag.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+    <title>Open dag</title>
+</head>
+<body>
+
+    
+    <ul id="navbar">
+        <li id="nav"><a href="Homepagina.html">HOME </a></li>
+        <li id="nav"><a href="Quiz.html">QUIZ </a></li>
+        <li id="nav"><a href="chatbot.html">CHATBOT </a></li>
+        <li id="nav"><a href="talentree.html">TALENT TREE</a></li>
+        <li id="nav"><a href="registration form.html">REGRISTRATIE</a></li>
+        <li id="nav"><a href="opendag.html">OPEN DAG</a></li>
+        <li id="nav"><a href="over ons.html">OVER ONS </a></li>
+   </ul>
+
+  <div class="container">
+
+
+<div class="content">
+  <div class="image-overlay">
+  <p>28 April 2024</p>
+  <h1>Techniek College Rotterdam <span>OPENDAG</span> Binnnenkort</h1>
+  <div class="launch-time">
+
+    <div class="countdown">
+
+      <div class="timer">
+          <div>
+              <p id="dagen">00</p>
+              <span>Dagen</span>
+          </div>
+          <div>
+              <p id="uur">00</p>
+              <span>Uur</span>
+          </div>
+          <div>
+              <p id="minuten">00</p>
+              <span>Minuten</span>
+          </div>
+          <div>
+              <p id="secondes">00</p>
+              <span>Secondes</span>
+          </div>
+      </div>
+      <a href="over ons.html">
+  <button type="button">Learn more <img src="images/triangle.png"></button>
+</a>
+</div>
+
+  </div>
+
+  <script>
+    var countDownDate = new Date("Apr 28, 2024 15:00:00:00").getTime();
+    var x = setInterval(function(){
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var dagen = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var uur = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minuten = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var secondes = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("dagen").innerHTML = dagen
+        document.getElementById("uur").innerHTML = uur
+        document.getElementById("minuten").innerHTML = minuten
+        document.getElementById("secondes").innerHTML = secondes
+
+        if(distance < 0){
+            clearInterval(x);
+            document.getElementById("dagen").innerHTML = "00";
+            document.getElementById("uur").innerHTML = "00";
+            document.getElementById("minuten").innerHTML = "00";
+            document.getElementById("secondes").innerHTML = "00";
+        }
+
+    },1000);
+
+
+ </script>
+
+</body>
+</html>

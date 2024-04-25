@@ -1,0 +1,252 @@
+* {
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(130, 106, 251);
+  background-image: url(mooiescool.jpg);
+  background-size: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  top: 40px;
+  left: -10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container .form {
+  margin-top: 30px;
+  width: 95%;
+}
+
+.form .input-box {
+  width: 70%;
+  margin-top: 15px;
+}
+
+.input-box label {
+  color: #333;
+}
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 0.9rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form .gender-box {
+  margin-top: 20px;
+}
+
+.gender-box h3 {
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.form .gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: #707070;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.form button {
+  height: 50px;
+  width: 100%;
+  left: 10px;
+  position: relative;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #dbff4a;
+}
+
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+
+ul a {
+  list-style: none;
+  text-align: center;
+  background-size: cover;
+  position: absolute;
+  top: -10px;
+  left: -45px;
+}
+
+li a {
+  position: relative;
+  font-size: 22px;
+  color: #dbff4a;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+  background: transparent;
+}
+
+li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #dbff4a;
+  transition: 0.3s;
+}
+
+li a:hover::before {
+  width: 100%;
+}
+
+li {
+  display: inline;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+
+  .container {
+    max-width: 300px;
+  }
+
+  .form :where(.gender-option, .gender) {
+    column-gap: 20px;
+  }
+}
+
+#sitemap {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  top: 970px;
+  left: 0px;
+  box-shadow: black 0px 0px 9px;
+  background-color: #006445;
+  font-size: 20px;
+  text-align: left;
+  color: #dbff4a;
+  line-height: 0.4;
+  font-weight: bold;
+}
+
+#navbar ul {
+  list-style: none;
+  text-align: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+}
+
+#navbar li a {
+  position: relative;
+  font-size: 22px;
+  color: #dbff4a;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+#navbar li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #dbff4a;
+  transition: 0.3s;
+}
+
+#navbar li a:hover::before {
+  width: 100%;
+}
+
+#navbar li {
+  display: inline;
+  font-weight: bold;
+}

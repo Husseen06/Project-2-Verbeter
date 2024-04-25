@@ -1,0 +1,275 @@
+*{
+    font-family: "Barlow",sans-serif;
+    
+}
+body{
+    background-image: url(mooiescool.jpg);
+    background-size: 100%;
+}
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 665px;
+}
+img{
+    border-radius: 25px;
+}
+.foto1{
+    border-radius: 25px;
+    position: absolute;
+    top: 350px;
+    left: 400px;
+    transition: transform 0.7s;
+    z-index: 100;
+    box-shadow: white;
+}
+.foto2{
+    position: absolute;
+    top: 350px;
+    left: 700px;
+    border-radius: 25px;
+    transition: transform 0.7s;
+    box-shadow: white;
+}
+.foto3{
+    position: absolute;
+    top: 350px;
+    left: 1000px;
+    border-radius: 25px;
+    transition: transform 0.7s;
+     box-shadow: white;
+}
+.tekst1{
+font-weight: bold;
+color: white;
+font-size: 1.4em;
+position: absolute;
+top: 220px;
+    left: 10px;
+cursor: pointer;
+width: 15vw;
+background: transparent;
+}
+.tekst2{
+    font-weight: bold;
+    color: white;
+    font-size: 1.4em;
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    cursor: pointer;
+    width: 15vw;
+    background: transparent;
+}
+.tekst3{
+    font-weight: bold;
+    color: white;
+    font-size: 1.4em;
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    cursor: pointer;
+    width: 15vw;
+    background: transparent;
+}
+.tekst1:hover{
+   text-decoration: underline;
+   width: 10vw;
+}
+.tekst2:hover{
+    text-decoration: underline;
+    width: 15vw;
+ }
+ .tekst3:hover{
+    text-decoration: underline;
+    width: 10vw;
+ }
+ .foto1:hover{
+    transform: translateY(-10px);
+}
+.foto2:hover{
+    transform: translateY(-10px);
+}
+.foto3:hover{
+    transform: translateY(-10px);
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 325px;
+}
+
+li a {
+   position: relative;
+   font-size: 22px;
+   color: #dbff4a;
+   font-weight: bold;
+   text-decoration: none;
+   margin-left: 10px;
+   background: transparent;
+   
+   
+   
+}
+li a::before {
+    content:"";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #dbff4a;
+    transition: .3s;
+}
+li a:hover::before{
+    width: 100%;
+}
+
+
+li{
+    display: inline;
+    
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    *{
+        font-family: "Barlow",sans-serif;
+        
+    }
+    body{
+        background-image: url(mooiescool.jpg);
+        background-size: 100%;
+    }
+    h1{
+        font-size: 2.4em;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 80px;
+        left: 150px;
+    }
+    img{
+        transition: transform 0.7s;
+        border-radius: 25px;
+    }
+    .foto1{
+        border-radius: 25px;
+        position: absolute;
+        top: 200px;
+        left: 50px;
+        transition: transform 0.7s;
+        z-index: 100;
+        box-shadow: white;
+    }
+    .foto2{
+        position: absolute;
+        top: 200px;
+        left: 300px;
+        border-radius: 25px;
+        transition: transform 0.7s;
+        box-shadow: white;
+    }
+    .foto3{
+        position: absolute;
+        top: 480px;
+        left: 170px;
+        border-radius: 25px;
+        transition: transform 0.7s;
+        box-shadow: white;
+    }
+    .tekst1{
+    font-weight: bold;
+    color: white;
+    font-size: 1.4em;
+    position: absolute;
+    top: 210px;
+    left: 10px;
+    cursor: pointer;
+    width: 30vw;
+    background: transparent;
+    }
+    .tekst2{
+        font-weight: bold;
+        color: white;
+        font-size: 1.4em;
+        position: absolute;
+        top: 210px;
+        left: 10px;
+        cursor: pointer;
+        width: 35vw;
+        font-family: "Kanit", sans-serif;
+    }
+    .tekst3{
+        font-weight: bold;
+        color: white;
+        font-size: 1.4em;
+        position: absolute;
+        top: 210px;
+        left: 10px;
+        cursor: pointer;
+        width: 30vw;
+    }
+    .tekst1:hover{
+       text-decoration: underline;
+       width: 10vw;
+    }
+    .tekst2:hover{
+        text-decoration: underline;
+        width: 15vw;
+     }
+     .tekst3:hover{
+        text-decoration: underline;
+        width: 10vw;
+     }
+     .foto1:hover{
+        transform: translateY(-10px);
+    }
+    .foto2:hover{
+        transform: translateY(-10px);
+    }
+    .foto3:hover{
+        transform: translateY(-10px);
+    }
+    ul {
+        list-style: none;
+        text-align: center;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        left: -40px;
+      }
+      
+      li a {
+       position: relative;
+       font-size: 22px;
+       color: #dbff4a;
+       font-weight: bold;
+       text-decoration: none;
+       margin-left: 10px;
+       background: transparent;
+      
+       
+       
+       
+      }
+      li a::before {
+        content:"";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #dbff4a;
+        transition: .3s;
+      }
+      li a:hover::before{
+        width: 100%;
+      }
+}

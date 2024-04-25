@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  background-image: url('mooiescool.jpg');
+  background-size: cover;
+}
+
+  #sitemap li {
+  color: #dbff4a;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+#navbar ul {
+  list-style: none;
+  text-align: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  position: absolute;
+  top: 0;
+
+  z-index: 1000;
+}
+
+#navbar li a {
+position: relative;
+  font-size: 22px;
+  color: #dbff4a;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 20px;
+
+
+}
+
+#navbar li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #dbff4a;
+  transition: .3s;
+}
+
+#navbar li a:hover::before {
+  width: 100%;
+}
+
+
+#navbar li {
+  display: inline;
+  font-weight: bold;
+}
+
+.img1 {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  height: 20px;
+  width: 20px;
+  box-shadow: 0px 0px 7px;
+}
+
+#chatbox {
+  width: 308px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+#botStarterMessage {
+  width: 300px;
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #333;
+  padding: 10px;
+  position: absolute;
+  left: 800px;
+  top: 245px;
+  border-radius: 10px;
+  background-color: #0f9b6f;
+
+}
+
+#userInput {
+  display: flex;
+  margin-top: 1px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 5px;
+  position: absolute;
+  right: 780px;
+  top: 640px;
+}
+
+#textInput {
+  flex-grow: 1;
+  font-size: 1em;
+  padding: 6px 23px;
+  border-radius: 10px;
+  position: absolute;
+  left: -328px;
+  top: -20px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url('type-bar.png');
+  background-size: cover;
+  background-position: center;
+  
+  
+}
+
+#buttonInput {
+  cursor: pointer;
+  background-color: #c0ce27;
+  color: white;
+  font-size: 1em;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 5px;
+  position: absolute;
+  right: 32px;
+  top: -18px;
+}
